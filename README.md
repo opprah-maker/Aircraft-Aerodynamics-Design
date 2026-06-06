@@ -3,13 +3,13 @@
 > Combined engineering project: experimental aerodynamics of the NACA 0012 aerofoil, classical
 > airfoil coefficient analysis, and conceptual sizing of a heavy-lift cargo transport aircraft.
 
-[![MATLAB](https://img.shields.io/badge/MATLAB-R2024a-orange?logo=mathworks&logoColor=white)]()
+[![MATLAB](https://img.shields.io/badge/MATLAB-R2024a-orangelogo=mathworks&logoColor=white)]()
 [![Aerospace Engineering](https://img.shields.io/badge/Discipline-Aerospace%20Engineering-0E1B4D)]()
-[![Report PDF](https://img.shields.io/badge/Reports-PDF-red?logo=adobe-acrobat-reader&logoColor=white)]()
+[![Report PDF](https://img.shields.io/badge/Reports-PDF-redlogo=adobe-acrobat-reader&logoColor=white)]()
 
-[![Open in MATLAB Online](https://img.shields.io/badge/Open%20in-MATLAB%20Online-orange?style=flat-square&logo=mathworks&logoColor=white)](https://matlab.mathworks.com/open/github/v1?repo=opprah-maker/Aircraft-Aerodynamics-Design&file=src/naca0012_analysis.m)
-[![Open in MATLAB Online](https://img.shields.io/badge/Open%20in-MATLAB%20Online-orange?style=flat-square&logo=mathworks&logoColor=white)](https://matlab.mathworks.com/open/github/v1?repo=opprah-maker/Aircraft-Aerodynamics-Design&file=src/cylinder_pressure.m)
-[![Open in MATLAB Online](https://img.shields.io/badge/Open%20in-MATLAB%20Online-orange?style=flat-square&logo=mathworks&logoColor=white)](https://matlab.mathworks.com/open/github/v1?repo=opprah-maker/Aircraft-Aerodynamics-Design&file=src/aircraft_sizing.m)
+[![Open in MATLAB Online](https://img.shields.io/badge/Open%20in-MATLAB%20Online-orangestyle=flat-square&logo=mathworks&logoColor=white)](https://matlab.mathworks.com/open/github/v1repo=opprah-maker/Aircraft-Aerodynamics-Design&file=src/naca0012_analysis.m)
+[![Open in MATLAB Online](https://img.shields.io/badge/Open%20in-MATLAB%20Online-orangestyle=flat-square&logo=mathworks&logoColor=white)](https://matlab.mathworks.com/open/github/v1repo=opprah-maker/Aircraft-Aerodynamics-Design&file=src/cylinder_pressure.m)
+[![Open in MATLAB Online](https://img.shields.io/badge/Open%20in-MATLAB%20Online-orangestyle=flat-square&logo=mathworks&logoColor=white)](https://matlab.mathworks.com/open/github/v1repo=opprah-maker/Aircraft-Aerodynamics-Design&file=src/aircraft_sizing.m)
 
 ---
 
@@ -632,21 +632,21 @@ Three three-view drawings from the aircraft-design module were also reconstructe
 
 ### 6.1 Heavy-lift aircraft 3-view (figure 21)
 
-[![Open interactive 3D Gaussian splat of images/aircraft-design/figure-21.png](https://raw.githubusercontent.com/opprah-maker/Aircraft-Aerodynamics-Design/main/images/aircraft-design/figure-21.png)](https://opprah-maker.github.io/splat/?s=acad_21 '3D Gaussian Splat viewer')
+[![Open interactive 3D Gaussian splat of images/aircraft-design/figure-21.png](https://raw.githubusercontent.com/opprah-maker/Aircraft-Aerodynamics-Design/main/images/aircraft-design/figure-21.png)](https://opprah-maker.github.io/splat/s=acad_21 '3D Gaussian Splat viewer')
 
-[**View in 3D (drag to orbit, scroll to zoom) &#x2192;**](https://opprah-maker.github.io/splat/?s=acad_21) hosted on the portfolio site
+[**View in 3D (drag to orbit, scroll to zoom) &#x2192;**](https://opprah-maker.github.io/splat/s=acad_21) hosted on the portfolio site
 
 ### 6.2 Heavy-lift aircraft 3-view (figure 24)
 
-[![Open interactive 3D Gaussian splat of images/aircraft-design/figure-24.png](https://raw.githubusercontent.com/opprah-maker/Aircraft-Aerodynamics-Design/main/images/aircraft-design/figure-24.png)](https://opprah-maker.github.io/splat/?s=acad_24 '3D Gaussian Splat viewer')
+[![Open interactive 3D Gaussian splat of images/aircraft-design/figure-24.png](https://raw.githubusercontent.com/opprah-maker/Aircraft-Aerodynamics-Design/main/images/aircraft-design/figure-24.png)](https://opprah-maker.github.io/splat/s=acad_24 '3D Gaussian Splat viewer')
 
-[**View in 3D (drag to orbit, scroll to zoom) &#x2192;**](https://opprah-maker.github.io/splat/?s=acad_24) hosted on the portfolio site
+[**View in 3D (drag to orbit, scroll to zoom) &#x2192;**](https://opprah-maker.github.io/splat/s=acad_24) hosted on the portfolio site
 
 ### 6.3 Heavy-lift aircraft 3-view (figure 26)
 
-[![Open interactive 3D Gaussian splat of images/aircraft-design/figure-26.png](https://raw.githubusercontent.com/opprah-maker/Aircraft-Aerodynamics-Design/main/images/aircraft-design/figure-26.png)](https://opprah-maker.github.io/splat/?s=acad_26 '3D Gaussian Splat viewer')
+[![Open interactive 3D Gaussian splat of images/aircraft-design/figure-26.png](https://raw.githubusercontent.com/opprah-maker/Aircraft-Aerodynamics-Design/main/images/aircraft-design/figure-26.png)](https://opprah-maker.github.io/splat/s=acad_26 '3D Gaussian Splat viewer')
 
-[**View in 3D (drag to orbit, scroll to zoom) &#x2192;**](https://opprah-maker.github.io/splat/?s=acad_26) hosted on the portfolio site
+[**View in 3D (drag to orbit, scroll to zoom) &#x2192;**](https://opprah-maker.github.io/splat/s=acad_26) hosted on the portfolio site
 
 ### 6.4 Generation notes
 
