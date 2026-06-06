@@ -29,7 +29,8 @@
    - [4.3 Stability & Control](#43-stability--control)
    - [4.4 Figure Gallery : Aircraft Design](#44-figure-gallery--aircraft-design)
 5. [How to Run](#5-how-to-run)
-6. [Topics](#6-topics)
+6. [3D Gaussian Splat Visualisations](#6-3d-gaussian-splat-visualisations)
+7. [Topics](#7-topics)
 
 ---
 
@@ -391,6 +392,40 @@ $C_L$, $C_D$, $L/D$, and writes the figures to `images/aerodynamics/`.
 Edit the mission-requirement block at the top of `src/aircraft_sizing.m` (payload, range,
 cruise Mach) and re-run. The script prints the sized $W/S$, $T/W$, wing area, span, and
 verifies $C_{n_\beta} > 0.004$ for directional stability.
+
+---
+
+## 6. 3D Gaussian Splat Visualisations
+
+Three three-view drawings from the aircraft-design module were also reconstructed as interactive 3D Gaussian splat previews using TripoSR (stabilityai/TripoSR, CPU inference) plus a custom mesh-to-splat converter. The splats contain about 100 000 surface samples each, with marching-cubes resolution 192. Drag to orbit, scroll to zoom.
+
+### 6.1 Heavy-lift aircraft 3-view (figure 21)
+
+<iframe src="https://opprah-maker.github.io/splat/?s=acad_21" width="100%" height="500" style="border:1px solid #ddd;border-radius:8px;" loading="lazy" title="3D Gaussian Splat: aircraft 3-view 21"></iframe>
+
+[View in full screen](https://opprah-maker.github.io/splat/?s=acad_21)
+
+### 6.2 Heavy-lift aircraft 3-view (figure 24)
+
+<iframe src="https://opprah-maker.github.io/splat/?s=acad_24" width="100%" height="500" style="border:1px solid #ddd;border-radius:8px;" loading="lazy" title="3D Gaussian Splat: aircraft 3-view 24"></iframe>
+
+[View in full screen](https://opprah-maker.github.io/splat/?s=acad_24)
+
+### 6.3 Heavy-lift aircraft 3-view (figure 26)
+
+<iframe src="https://opprah-maker.github.io/splat/?s=acad_26" width="100%" height="500" style="border:1px solid #ddd;border-radius:8px;" loading="lazy" title="3D Gaussian Splat: aircraft 3-view 26"></iframe>
+
+[View in full screen](https://opprah-maker.github.io/splat/?s=acad_26)
+
+### 6.4 Generation notes
+
+- Model: TripoSR (stabilityai/TripoSR), CPU inference, about 20-30 s per image
+- Marching cubes: scikit-image (CUDA-only `torchmcubes` was patched out)
+- Surface sampling: trimesh, 100 000 points, face-normal quaternion encoding
+- Splat format: antimatter15/splat, 32 bytes per splat
+- Hardware: GTX 1050, 2 GB VRAM, no CUDA toolkit, CPU mode
+
+The full 3D splat gallery is at <https://opprah-maker.github.io/#3d>.
 
 ---
 
