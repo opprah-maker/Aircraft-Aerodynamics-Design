@@ -789,18 +789,13 @@ The MATLAB scripts in this repository are post-processing utilities only; the wi
 
 ## 11. Engineering tools: what was taught, what was self-taught
 
-**Taught during the undergraduate programme (Wrexham University, BEng Aeronautical and Mechanical Engineering, 2016 to 2020):**
+**Taught during the undergraduate programme (Wrexham University, BEng Aeronautical and Mechanical Engineering, 2016 to 2020):** this report draws on two specific modules, with background from the rest of the BEng.
 
-The numerical methods, aerodynamics, and report-writing skills that underpin this project were taught in the BEng programme. The exact combination of modules and the specific commercial software in use at the time are not separately itemised here, because the value of this section is in the boundary between the taught chapter and the self-taught chapter that follows, not in a module-by-module transcript.
+- **ENG 687 (Aerodynamics assignment).** The NACA 0012 wind-tunnel brief is the source of the `naca0012_analysis.m` script and the lift / drag / polar plots in the `wind-tunnel-data/` folder. The data-reduction method (raw balance voltages to CL, CD, CM) and the pressure-coefficient calculations around the aerofoil surface come from that assignment.
+- **ENG 60K (Aircraft Stability, Control, and Design).** The constraint-analysis method (matching the AOP at the design point, then sweeping the empty-weight fraction to get a feasible region, then sizing the control surfaces) is from this module. The `aircraft_sizing.m` script in the root of the repo is a direct product of that assignment.
+- **Background from the BEng.** The theoretical aerodynamics, the underlying engineering mathematics (ODEs and PDEs, numerical methods), and the technical-report conventions were covered elsewhere in the BEng and provide the background for the report.
 
-In broad terms, the taught chapter covered:
 
-- The engineering mathematics that supports the work: differential equations, numerical methods, and stability analysis.
-- The relevant engineering science for each project (aerodynamics, heat transfer, energy systems, or aircraft design, depending on the assignment).
-- MATLAB for numerical-modelling assignments, including vectorised array operations, plotting, and small optimisation problems.
-- Technical report writing in British English, including structure, figure presentation, and referencing.
-
-The remainder of the work in this repository (the choice of specific software, the design of the figures, the addition of 3D visualisations, the conversion of Excel data to web-friendly formats, and the way the report is published on GitHub) is the self-taught chapter below.
 
 **Self-taught after graduation, in the home laboratory:**
 
