@@ -7,6 +7,10 @@
 [![Aerospace Engineering](https://img.shields.io/badge/Discipline-Aerospace%20Engineering-0E1B4D)]()
 [![Report PDF](https://img.shields.io/badge/Reports-PDF-red?logo=adobe-acrobat-reader&logoColor=white)]()
 
+[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=opprah-maker/Aircraft-Aerodynamics-Design&file=src/naca0012_analysis.m)
+[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=opprah-maker/Aircraft-Aerodynamics-Design&file=src/cylinder_pressure.m)
+[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=opprah-maker/Aircraft-Aerodynamics-Design&file=src/aircraft_sizing.m)
+
 ---
 
 ## Table of Contents
