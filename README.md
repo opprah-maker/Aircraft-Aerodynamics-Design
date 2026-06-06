@@ -54,8 +54,8 @@ The full academic write-ups for each module are included as PDFs alongside the s
 | Aircraft Assessment : Heavy-lift transport aircraft conceptual design | [`reports/Aircraft-Assessment.pdf`](reports/Aircraft-Assessment.pdf) |
 
 Plain-text extracts of each report are also available in
-[`reports/Aerodynamics-Assignment_text.txt`](reports/Aerodynamics-Assignment_text.txt) and
-[`reports/Aircraft-Assessment_text.txt`](reports/Aircraft-Assessment_text.txt).
+ and
+.
 
 ---
 
@@ -339,9 +339,7 @@ Aircraft-Aerodynamics-Design/
 |-- README.md                       # This file
 |-- reports/
 |   |-- Aerodynamics-Assignment.pdf
-|   |-- Aerodynamics-Assignment_text.txt
-|   |-- Aircraft-Assessment.pdf
-|   '-- Aircraft-Assessment_text.txt
+|   '-- Aircraft-Assessment.pdf
 |-- src/
 |   |-- naca0012_analysis.m         # Wind tunnel data processing
 |   |-- cylinder_pressure.m         # C_p distribution around a cylinder
