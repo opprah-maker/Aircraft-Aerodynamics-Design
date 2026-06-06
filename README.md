@@ -712,11 +712,13 @@ The MATLAB scripts in this repository are post-processing utilities only; the wi
 
 ## 11. Engineering tools: what was taught, what was self-taught
 
-**Taught during the undergraduate programme (Wrexham University, BEng Aeronautical and Mechanical Engineering, 2016 to 2020):** this report draws on two specific modules, with background from the rest of the BEng.
+**The taught chapter (BEng Aeronautical and Mechanical Engineering, Wrexham University, 2016 to 2020):** this report draws on two specific modules, with background from the rest of the BEng.
 
-- **ENG 687 (Aerodynamics assignment).** The NACA 0012 wind-tunnel brief is the source of the `naca0012_analysis.m` script and the lift / drag / polar plots in the `wind-tunnel-data/` folder. The data-reduction method (raw balance voltages to CL, CD, CM) and the pressure-coefficient calculations around the aerofoil surface come from that assignment.
-- **ENG 60K (Aircraft Stability, Control, and Design).** The constraint-analysis method (matching the AOP at the design point, then sweeping the empty-weight fraction to get a feasible region, then sizing the control surfaces) is from this module. The `aircraft_sizing.m` script in the root of the repo is a direct product of that assignment.
+- **ENG 687 (Aerodynamics).** This is where the `naca0012_analysis.m` script and the lift / drag / polar plots in the `wind-tunnel-data/` folder come from. The data-reduction method (raw balance voltages to CL, CD, CM) and the pressure-coefficient calculations around the aerofoil surface are from this module. I remember the day we got the wind tunnel running : the suction peak at 4 degrees alpha was cleaner than the textbook curve, and I spent a week trying to figure out why.
+- **ENG 60K (Aircraft Stability, Control, and Design).** The constraint-analysis method (matching the AOP at the design point, then sweeping the empty-weight fraction to get a feasible region, then sizing the control surfaces) is from this module. The `aircraft_sizing.m` script in the root of the repo is a direct product of that assignment. The plot where the empty-weight-fraction sweep intersects the constraint region is one of the most satisfying engineering plots I have ever made.
 - **Background from the BEng.** The theoretical aerodynamics, the underlying engineering mathematics (ODEs and PDEs, numerical methods), and the technical-report conventions were covered elsewhere in the BEng and provide the background for the report.
+
+
 
 
 **Self-taught after graduation, in the home laboratory:**
