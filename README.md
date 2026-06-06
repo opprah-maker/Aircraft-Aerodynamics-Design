@@ -110,85 +110,314 @@ The cleaned wind-tunnel datasets are stored in [`data/nacadata.csv`](data/nacada
 
 All 77 figures from the NACA 0012 wind-tunnel test report. Each is linked to its file in `images/aerodynamics/`.
 
-| Fig. | Preview | Description |
-|---|---|---|
-| 1 | <a href="images/aerodynamics/figure-01.png"><img src="images/aerodynamics/figure-01.png" width="120" alt="Figure 1"></a> | Streamlines around a circular cylinder in uniform flow — potential flow pattern with stagnation points at theta = 0 deg and theta = 180 deg |
-| 2 | <a href="images/aerodynamics/figure-02.png"><img src="images/aerodynamics/figure-02.png" width="120" alt="Figure 2"></a> | Surface pressure distribution on a circular cylinder — pressure coefficient Cp vs. angular position theta |
-| 3 | <a href="images/aerodynamics/figure-03.png"><img src="images/aerodynamics/figure-03.png" width="120" alt="Figure 3"></a> | Comparison of theoretical and experimental pressure distributions on a circular cylinder — inviscid theory vs. real viscous flow |
-| 4 | <a href="images/aerodynamics/figure-04.png"><img src="images/aerodynamics/figure-04.png" width="120" alt="Figure 4"></a> | NACA 0012 airfoil geometry — symmetric profile with 12% thickness-to-chord ratio |
-| 5 | <a href="images/aerodynamics/figure-05.png"><img src="images/aerodynamics/figure-05.png" width="120" alt="Figure 5"></a> | NACA 0012 coordinate generation — upper and lower surface points from the NACA 4-digit equation |
-| 6 | <a href="images/aerodynamics/figure-06.png"><img src="images/aerodynamics/figure-06.png" width="120" alt="Figure 6"></a> | Wind-tunnel test section — schematic of the open-circuit subsonic tunnel used for the NACA 0012 tests |
-| 7 | <a href="images/aerodynamics/figure-07.png"><img src="images/aerodynamics/figure-07.png" width="120" alt="Figure 7"></a> | Pressure tap locations on the NACA 0012 model — 20 surface pressure taps at 10%, 30%, 50%, 70%, 90% chord |
-| 8 | <a href="images/aerodynamics/figure-08.png"><img src="images/aerodynamics/figure-08.png" width="120" alt="Figure 8"></a> | Lift coefficient CL vs. angle of attack alpha — linear region slope CLalpha = 0.108 per degree |
-| 9 | <a href="images/aerodynamics/figure-09.png"><img src="images/aerodynamics/figure-09.png" width="120" alt="Figure 9"></a> | Drag coefficient CD vs. angle of attack alpha — drag divergence near stall |
-| 10 | <a href="images/aerodynamics/figure-10.png"><img src="images/aerodynamics/figure-10.png" width="120" alt="Figure 10"></a> | Lift-to-drag ratio L/D vs. alpha — maximum (L/D)max = 5.12 at alpha = 4 deg |
-| 11 | <a href="images/aerodynamics/figure-11.png"><img src="images/aerodynamics/figure-11.png" width="120" alt="Figure 11"></a> | Pitching moment coefficient Cm vs. alpha — nearly constant for the symmetric NACA 0012 |
-| 12 | <a href="images/aerodynamics/figure-12.png"><img src="images/aerodynamics/figure-12.png" width="120" alt="Figure 12"></a> | Stall onset detection — break in CL curve at alpha = 16 deg |
-| 13 | <a href="images/aerodynamics/figure-13.png"><img src="images/aerodynamics/figure-13.png" width="120" alt="Figure 13"></a> | Pressure coefficient distribution at alpha = 4 deg — suction peak near leading edge |
-| 14 | <a href="images/aerodynamics/figure-14.png"><img src="images/aerodynamics/figure-14.png" width="120" alt="Figure 14"></a> | Pressure coefficient distribution at alpha = 10 deg — leading-edge suction peak intensifies |
-| 15 | <a href="images/aerodynamics/figure-15.png"><img src="images/aerodynamics/figure-15.png" width="120" alt="Figure 15"></a> | Pressure coefficient distribution at alpha = 16 deg — boundary layer separation near leading edge |
-| 16 | <a href="images/aerodynamics/figure-16.png"><img src="images/aerodynamics/figure-16.png" width="120" alt="Figure 16"></a> | Boundary layer transition detection — hot-film probe data showing transition from laminar to turbulent |
-| 17 | <a href="images/aerodynamics/figure-17.png"><img src="images/aerodynamics/figure-17.png" width="120" alt="Figure 17"></a> | Wind-tunnel calibration data — empty-tunnel dynamic pressure vs. fan speed |
-| 18 | <a href="images/aerodynamics/figure-18.png"><img src="images/aerodynamics/figure-18.png" width="120" alt="Figure 18"></a> | Blockage correction calculation — solid blockage and wake blockage corrections applied to raw data |
-| 19 | <a href="images/aerodynamics/figure-19.png"><img src="images/aerodynamics/figure-19.png" width="120" alt="Figure 19"></a> | Reynolds number calculation — Rec = 3.2 x 10⁵ at test conditions (1001.25 hPa, 20.1 C) |
-| 20 | <a href="images/aerodynamics/figure-20.png"><img src="images/aerodynamics/figure-20.png" width="120" alt="Figure 20"></a> | Mach number effect — compressibility correction for M = 0.15 test conditions |
-| 21 | <a href="images/aerodynamics/figure-21.png"><img src="images/aerodynamics/figure-21.png" width="120" alt="Figure 21"></a> | Wall pressure tap calibration — linearity check of the Scanivalve pressure transducer |
-| 22 | <a href="images/aerodynamics/figure-22.png"><img src="images/aerodynamics/figure-22.png" width="120" alt="Figure 22"></a> | Data acquisition system — National Instruments DAQ with 16-bit resolution |
-| 23 | <a href="images/aerodynamics/figure-23.png"><img src="images/aerodynamics/figure-23.png" width="120" alt="Figure 23"></a> | Uncertainty analysis — Kline-McClintock method for combined standard uncertainty in CL and CD |
-| 24 | <a href="images/aerodynamics/figure-24.png"><img src="images/aerodynamics/figure-24.png" width="120" alt="Figure 24"></a> | Repeatability check — five runs at alpha = 8 deg showing CL repeatability within +/- 0.005 |
-| 25 | <a href="images/aerodynamics/figure-25.png"><img src="images/aerodynamics/figure-25.png" width="120" alt="Figure 25"></a> | Angle of attack calibration — encoder calibration curve for the model support |
-| 26 | <a href="images/aerodynamics/figure-26.png"><img src="images/aerodynamics/figure-26.png" width="120" alt="Figure 26"></a> | NACA 0012 reference data — Abbott and von Doenhoff comparison at Re = 3 x 10⁵ |
-| 27 | <a href="images/aerodynamics/figure-27.png"><img src="images/aerodynamics/figure-27.png" width="120" alt="Figure 27"></a> | Lift curve slope comparison — measured CLalpha vs. thin-airfoil theory 2pi/rad |
-| 28 | <a href="images/aerodynamics/figure-28.png"><img src="images/aerodynamics/figure-28.png" width="120" alt="Figure 28"></a> | Drag polar — CD vs. CL² showing parabolic drag bucket |
-| 29 | <a href="images/aerodynamics/figure-29.png"><img src="images/aerodynamics/figure-29.png" width="120" alt="Figure 29"></a> | Effect of Reynolds number — CL and CD variation with Re from 2 x 10⁵ to 4 x 10⁵ |
-| 30 | <a href="images/aerodynamics/figure-30.png"><img src="images/aerodynamics/figure-30.png" width="120" alt="Figure 30"></a> | Effect of surface roughness — standard smooth model vs. transition-fixed model |
-| 31 | <a href="images/aerodynamics/figure-31.png"><img src="images/aerodynamics/figure-31.png" width="120" alt="Figure 31"></a> | Wind-tunnel balance calibration — six-component strain-gauge balance |
-| 32 | <a href="images/aerodynamics/figure-32.png"><img src="images/aerodynamics/figure-32.png" width="120" alt="Figure 32"></a> | Tare drag correction — support strut interference |
-| 33 | <a href="images/aerodynamics/figure-33.png"><img src="images/aerodynamics/figure-33.png" width="120" alt="Figure 33"></a> | Tunnel wall interference — solid and wake blockage summary |
-| 34 | <a href="images/aerodynamics/figure-34.png"><img src="images/aerodynamics/figure-34.png" width="120" alt="Figure 34"></a> | Lift curve in the stalled region — post-stall CL decay |
-| 35 | <a href="images/aerodynamics/figure-35.png"><img src="images/aerodynamics/figure-35.png" width="120" alt="Figure 35"></a> | Pressure recovery on the upper surface — Cp at 50% chord vs. alpha |
-| 36 | <a href="images/aerodynamics/figure-36.png"><img src="images/aerodynamics/figure-36.png" width="120" alt="Figure 36"></a> | Leading-edge radius effect — comparison of NACA 0012 with NACA 0030 and NACA 0060 |
-| 37 | <a href="images/aerodynamics/figure-37.png"><img src="images/aerodynamics/figure-37.png" width="120" alt="Figure 37"></a> | Trailing-edge angle effect — base pressure measurement |
-| 38 | <a href="images/aerodynamics/figure-38.png"><img src="images/aerodynamics/figure-38.png" width="120" alt="Figure 38"></a> | Hysteresis in the stall region — increasing vs. decreasing alpha sweep |
-| 39 | <a href="images/aerodynamics/figure-39.png"><img src="images/aerodynamics/figure-39.png" width="120" alt="Figure 39"></a> | Three-dimensional effect — tip vortex influence on outboard CL |
-| 40 | <a href="images/aerodynamics/figure-40.png"><img src="images/aerodynamics/figure-40.png" width="120" alt="Figure 40"></a> | Ground effect — CL variation with height above the tunnel floor |
-| 41 | <a href="images/aerodynamics/figure-41.png"><img src="images/aerodynamics/figure-41.png" width="120" alt="Figure 41"></a> | Comparison with XFOIL prediction — panel method vs. experiment |
-| 42 | <a href="images/aerodynamics/figure-42.png"><img src="images/aerodynamics/figure-42.png" width="120" alt="Figure 42"></a> | Comparison with CFD prediction — k-omega SST RANS vs. experiment |
-| 43 | <a href="images/aerodynamics/figure-43.png"><img src="images/aerodynamics/figure-43.png" width="120" alt="Figure 43"></a> | Mesh independence study — CL convergence with grid refinement |
-| 44 | <a href="images/aerodynamics/figure-44.png"><img src="images/aerodynamics/figure-44.png" width="120" alt="Figure 44"></a> | Turbulence intensity effect — low-turbulence vs. standard tunnel |
-| 45 | <a href="images/aerodynamics/figure-45.png"><img src="images/aerodynamics/figure-45.png" width="120" alt="Figure 45"></a> | Surface oil-flow visualisation — streamlines on the upper surface near stall |
-| 46 | <a href="images/aerodynamics/figure-46.png"><img src="images/aerodynamics/figure-46.png" width="120" alt="Figure 46"></a> | Boundary layer profile — pitot probe traverse at 70% chord |
-| 47 | <a href="images/aerodynamics/figure-47.png"><img src="images/aerodynamics/figure-47.png" width="120" alt="Figure 47"></a> | Momentum thickness calculation — theta from the integrated profile |
-| 48 | <a href="images/aerodynamics/figure-48.png"><img src="images/aerodynamics/figure-48.png" width="120" alt="Figure 48"></a> | Displacement thickness calculation — delta* from the integrated profile |
-| 49 | <a href="images/aerodynamics/figure-49.png"><img src="images/aerodynamics/figure-49.png" width="120" alt="Figure 49"></a> | Shape factor H = delta*/theta — separation criterion H > 2.5 |
-| 50 | <a href="images/aerodynamics/figure-50.png"><img src="images/aerodynamics/figure-50.png" width="120" alt="Figure 50"></a> | Skin friction coefficient Cf — from the Clauser plot method |
-| 51 | <a href="images/aerodynamics/figure-51.png"><img src="images/aerodynamics/figure-51.png" width="120" alt="Figure 51"></a> | Heat transfer analogy — Cf vs. Stanton number correlation |
-| 52 | <a href="images/aerodynamics/figure-52.png"><img src="images/aerodynamics/figure-52.png" width="120" alt="Figure 52"></a> | Pressure gradient parameter — beta for the NACA 0012 |
-| 53 | <a href="images/aerodynamics/figure-53.png"><img src="images/aerodynamics/figure-53.png" width="120" alt="Figure 53"></a> | Separation point detection — where Cf = 0 on the upper surface |
-| 54 | <a href="images/aerodynamics/figure-54.png"><img src="images/aerodynamics/figure-54.png" width="120" alt="Figure 54"></a> | Laminar separation bubble — visualisation at alpha = 12 deg |
-| 55 | <a href="images/aerodynamics/figure-55.png"><img src="images/aerodynamics/figure-55.png" width="120" alt="Figure 55"></a> | Turbulent reattachment — downstream of the laminar separation bubble |
-| 56 | <a href="images/aerodynamics/figure-56.png"><img src="images/aerodynamics/figure-56.png" width="120" alt="Figure 56"></a> | Bubble length vs. alpha — increasing with angle of attack |
-| 57 | <a href="images/aerodynamics/figure-57.png"><img src="images/aerodynamics/figure-57.png" width="120" alt="Figure 57"></a> | Maximum bubble length — at alpha = 14 deg just before stall |
-| 58 | <a href="images/aerodynamics/figure-58.png"><img src="images/aerodynamics/figure-58.png" width="120" alt="Figure 58"></a> | NACA 0012 polar summary — final CL, CD, Cm vs. alpha at Re = 3.2 x 10⁵ |
-| 59 | <a href="images/aerodynamics/figure-59.png"><img src="images/aerodynamics/figure-59.png" width="120" alt="Figure 59"></a> | Data table — tabulated coefficients for all test angles |
-| 60 | <a href="images/aerodynamics/figure-60.png"><img src="images/aerodynamics/figure-60.png" width="120" alt="Figure 60"></a> | Plots appendix — additional Cp distributions at intermediate angles |
-| 61 | <a href="images/aerodynamics/figure-61.png"><img src="images/aerodynamics/figure-61.png" width="120" alt="Figure 61"></a> | Plots appendix — Cp distributions in the stalled region |
-| 62 | <a href="images/aerodynamics/figure-62.png"><img src="images/aerodynamics/figure-62.png" width="120" alt="Figure 62"></a> | Plots appendix — boundary layer profiles at 30% chord |
-| 63 | <a href="images/aerodynamics/figure-63.png"><img src="images/aerodynamics/figure-63.png" width="120" alt="Figure 63"></a> | Plots appendix — boundary layer profiles at 50% chord |
-| 64 | <a href="images/aerodynamics/figure-64.png"><img src="images/aerodynamics/figure-64.png" width="120" alt="Figure 64"></a> | Plots appendix — boundary layer profiles at 70% chord |
-| 65 | <a href="images/aerodynamics/figure-65.png"><img src="images/aerodynamics/figure-65.png" width="120" alt="Figure 65"></a> | Plots appendix — boundary layer profiles at 90% chord |
-| 66 | <a href="images/aerodynamics/figure-66.png"><img src="images/aerodynamics/figure-66.png" width="120" alt="Figure 66"></a> | Plots appendix — surface streamline visualisation at alpha = 10 deg |
-| 67 | <a href="images/aerodynamics/figure-67.png"><img src="images/aerodynamics/figure-67.png" width="120" alt="Figure 67"></a> | Plots appendix — surface streamline visualisation at alpha = 16 deg |
-| 68 | <a href="images/aerodynamics/figure-68.png"><img src="images/aerodynamics/figure-68.png" width="120" alt="Figure 68"></a> | Plots appendix — wake survey at alpha = 4 deg |
-| 69 | <a href="images/aerodynamics/figure-69.png"><img src="images/aerodynamics/figure-69.png" width="120" alt="Figure 69"></a> | Plots appendix — wake survey at alpha = 10 deg |
-| 70 | <a href="images/aerodynamics/figure-70.png"><img src="images/aerodynamics/figure-70.png" width="120" alt="Figure 70"></a> | Plots appendix — wake survey at alpha = 16 deg |
-| 71 | <a href="images/aerodynamics/figure-71.png"><img src="images/aerodynamics/figure-71.png" width="120" alt="Figure 71"></a> | Plots appendix — turbulence intensity spectrum in the test section |
-| 72 | <a href="images/aerodynamics/figure-72.png"><img src="images/aerodynamics/figure-72.png" width="120" alt="Figure 72"></a> | Plots appendix — acoustic spectrum of the tunnel |
-| 73 | <a href="images/aerodynamics/figure-73.png"><img src="images/aerodynamics/figure-73.png" width="120" alt="Figure 73"></a> | Plots appendix — temperature drift during the test campaign |
-| 74 | <a href="images/aerodynamics/figure-74.png"><img src="images/aerodynamics/figure-74.png" width="120" alt="Figure 74"></a> | Plots appendix — atmospheric pressure variation |
-| 75 | <a href="images/aerodynamics/figure-75.png"><img src="images/aerodynamics/figure-75.png" width="120" alt="Figure 75"></a> | Plots appendix — relative humidity variation |
-| 76 | <a href="images/aerodynamics/figure-76.png"><img src="images/aerodynamics/figure-76.png" width="120" alt="Figure 76"></a> | Plots appendix — tunnel speed calibration curve |
-| 77 | <a href="images/aerodynamics/figure-77.png"><img src="images/aerodynamics/figure-77.png" width="120" alt="Figure 77"></a> | Plots appendix — final data quality summary |
+**Figure 1** — Streamlines around a circular cylinder in uniform flow — potential flow pattern with stagnation points at theta = 0 deg and theta = 180 deg
+
+[![](images/aerodynamics/figure-01.png)](images/aerodynamics/figure-01.png)
+
+**Figure 2** — Surface pressure distribution on a circular cylinder — pressure coefficient Cp vs. angular position theta
+
+[![](images/aerodynamics/figure-02.png)](images/aerodynamics/figure-02.png)
+
+**Figure 3** — Comparison of theoretical and experimental pressure distributions on a circular cylinder — inviscid theory vs. real viscous flow
+
+[![](images/aerodynamics/figure-03.png)](images/aerodynamics/figure-03.png)
+
+**Figure 4** — NACA 0012 airfoil geometry — symmetric profile with 12% thickness-to-chord ratio
+
+[![](images/aerodynamics/figure-04.png)](images/aerodynamics/figure-04.png)
+
+**Figure 5** — NACA 0012 coordinate generation — upper and lower surface points from the NACA 4-digit equation
+
+[![](images/aerodynamics/figure-05.png)](images/aerodynamics/figure-05.png)
+
+**Figure 6** — Wind-tunnel test section — schematic of the open-circuit subsonic tunnel used for the NACA 0012 tests
+
+[![](images/aerodynamics/figure-06.png)](images/aerodynamics/figure-06.png)
+
+**Figure 7** — Pressure tap locations on the NACA 0012 model — 20 surface pressure taps at 10%, 30%, 50%, 70%, 90% chord
+
+[![](images/aerodynamics/figure-07.png)](images/aerodynamics/figure-07.png)
+
+**Figure 8** — Lift coefficient CL vs. angle of attack alpha — linear region slope CLalpha = 0.108 per degree
+
+[![](images/aerodynamics/figure-08.png)](images/aerodynamics/figure-08.png)
+
+**Figure 9** — Drag coefficient CD vs. angle of attack alpha — drag divergence near stall
+
+[![](images/aerodynamics/figure-09.png)](images/aerodynamics/figure-09.png)
+
+**Figure 10** — Lift-to-drag ratio L/D vs. alpha — maximum (L/D)max = 5.12 at alpha = 4 deg
+
+[![](images/aerodynamics/figure-10.png)](images/aerodynamics/figure-10.png)
+
+**Figure 11** — Pitching moment coefficient Cm vs. alpha — nearly constant for the symmetric NACA 0012
+
+[![](images/aerodynamics/figure-11.png)](images/aerodynamics/figure-11.png)
+
+**Figure 12** — Stall onset detection — break in CL curve at alpha = 16 deg
+
+[![](images/aerodynamics/figure-12.png)](images/aerodynamics/figure-12.png)
+
+**Figure 13** — Pressure coefficient distribution at alpha = 4 deg — suction peak near leading edge
+
+[![](images/aerodynamics/figure-13.png)](images/aerodynamics/figure-13.png)
+
+**Figure 14** — Pressure coefficient distribution at alpha = 10 deg — leading-edge suction peak intensifies
+
+[![](images/aerodynamics/figure-14.png)](images/aerodynamics/figure-14.png)
+
+**Figure 15** — Pressure coefficient distribution at alpha = 16 deg — boundary layer separation near leading edge
+
+[![](images/aerodynamics/figure-15.png)](images/aerodynamics/figure-15.png)
+
+**Figure 16** — Boundary layer transition detection — hot-film probe data showing transition from laminar to turbulent
+
+[![](images/aerodynamics/figure-16.png)](images/aerodynamics/figure-16.png)
+
+**Figure 17** — Wind-tunnel calibration data — empty-tunnel dynamic pressure vs. fan speed
+
+[![](images/aerodynamics/figure-17.png)](images/aerodynamics/figure-17.png)
+
+**Figure 18** — Blockage correction calculation — solid blockage and wake blockage corrections applied to raw data
+
+[![](images/aerodynamics/figure-18.png)](images/aerodynamics/figure-18.png)
+
+**Figure 19** — Reynolds number calculation — Rec = 3.2 x 10⁵ at test conditions (1001.25 hPa, 20.1 C)
+
+[![](images/aerodynamics/figure-19.png)](images/aerodynamics/figure-19.png)
+
+**Figure 20** — Mach number effect — compressibility correction for M = 0.15 test conditions
+
+[![](images/aerodynamics/figure-20.png)](images/aerodynamics/figure-20.png)
+
+**Figure 21** — Wall pressure tap calibration — linearity check of the Scanivalve pressure transducer
+
+[![](images/aerodynamics/figure-21.png)](images/aerodynamics/figure-21.png)
+
+**Figure 22** — Data acquisition system — National Instruments DAQ with 16-bit resolution
+
+[![](images/aerodynamics/figure-22.png)](images/aerodynamics/figure-22.png)
+
+**Figure 23** — Uncertainty analysis — Kline-McClintock method for combined standard uncertainty in CL and CD
+
+[![](images/aerodynamics/figure-23.png)](images/aerodynamics/figure-23.png)
+
+**Figure 24** — Repeatability check — five runs at alpha = 8 deg showing CL repeatability within +/- 0.005
+
+[![](images/aerodynamics/figure-24.png)](images/aerodynamics/figure-24.png)
+
+**Figure 25** — Angle of attack calibration — encoder calibration curve for the model support
+
+[![](images/aerodynamics/figure-25.png)](images/aerodynamics/figure-25.png)
+
+**Figure 26** — NACA 0012 reference data — Abbott and von Doenhoff comparison at Re = 3 x 10⁵
+
+[![](images/aerodynamics/figure-26.png)](images/aerodynamics/figure-26.png)
+
+**Figure 27** — Lift curve slope comparison — measured CLalpha vs. thin-airfoil theory 2pi/rad
+
+[![](images/aerodynamics/figure-27.png)](images/aerodynamics/figure-27.png)
+
+**Figure 28** — Drag polar — CD vs. CL² showing parabolic drag bucket
+
+[![](images/aerodynamics/figure-28.png)](images/aerodynamics/figure-28.png)
+
+**Figure 29** — Effect of Reynolds number — CL and CD variation with Re from 2 x 10⁵ to 4 x 10⁵
+
+[![](images/aerodynamics/figure-29.png)](images/aerodynamics/figure-29.png)
+
+**Figure 30** — Effect of surface roughness — standard smooth model vs. transition-fixed model
+
+[![](images/aerodynamics/figure-30.png)](images/aerodynamics/figure-30.png)
+
+**Figure 31** — Wind-tunnel balance calibration — six-component strain-gauge balance
+
+[![](images/aerodynamics/figure-31.png)](images/aerodynamics/figure-31.png)
+
+**Figure 32** — Tare drag correction — support strut interference
+
+[![](images/aerodynamics/figure-32.png)](images/aerodynamics/figure-32.png)
+
+**Figure 33** — Tunnel wall interference — solid and wake blockage summary
+
+[![](images/aerodynamics/figure-33.png)](images/aerodynamics/figure-33.png)
+
+**Figure 34** — Lift curve in the stalled region — post-stall CL decay
+
+[![](images/aerodynamics/figure-34.png)](images/aerodynamics/figure-34.png)
+
+**Figure 35** — Pressure recovery on the upper surface — Cp at 50% chord vs. alpha
+
+[![](images/aerodynamics/figure-35.png)](images/aerodynamics/figure-35.png)
+
+**Figure 36** — Leading-edge radius effect — comparison of NACA 0012 with NACA 0030 and NACA 0060
+
+[![](images/aerodynamics/figure-36.png)](images/aerodynamics/figure-36.png)
+
+**Figure 37** — Trailing-edge angle effect — base pressure measurement
+
+[![](images/aerodynamics/figure-37.png)](images/aerodynamics/figure-37.png)
+
+**Figure 38** — Hysteresis in the stall region — increasing vs. decreasing alpha sweep
+
+[![](images/aerodynamics/figure-38.png)](images/aerodynamics/figure-38.png)
+
+**Figure 39** — Three-dimensional effect — tip vortex influence on outboard CL
+
+[![](images/aerodynamics/figure-39.png)](images/aerodynamics/figure-39.png)
+
+**Figure 40** — Ground effect — CL variation with height above the tunnel floor
+
+[![](images/aerodynamics/figure-40.png)](images/aerodynamics/figure-40.png)
+
+**Figure 41** — Comparison with XFOIL prediction — panel method vs. experiment
+
+[![](images/aerodynamics/figure-41.png)](images/aerodynamics/figure-41.png)
+
+**Figure 42** — Comparison with CFD prediction — k-omega SST RANS vs. experiment
+
+[![](images/aerodynamics/figure-42.png)](images/aerodynamics/figure-42.png)
+
+**Figure 43** — Mesh independence study — CL convergence with grid refinement
+
+[![](images/aerodynamics/figure-43.png)](images/aerodynamics/figure-43.png)
+
+**Figure 44** — Turbulence intensity effect — low-turbulence vs. standard tunnel
+
+[![](images/aerodynamics/figure-44.png)](images/aerodynamics/figure-44.png)
+
+**Figure 45** — Surface oil-flow visualisation — streamlines on the upper surface near stall
+
+[![](images/aerodynamics/figure-45.png)](images/aerodynamics/figure-45.png)
+
+**Figure 46** — Boundary layer profile — pitot probe traverse at 70% chord
+
+[![](images/aerodynamics/figure-46.png)](images/aerodynamics/figure-46.png)
+
+**Figure 47** — Momentum thickness calculation — theta from the integrated profile
+
+[![](images/aerodynamics/figure-47.png)](images/aerodynamics/figure-47.png)
+
+**Figure 48** — Displacement thickness calculation — delta* from the integrated profile
+
+[![](images/aerodynamics/figure-48.png)](images/aerodynamics/figure-48.png)
+
+**Figure 49** — Shape factor H = delta*/theta — separation criterion H > 2.5
+
+[![](images/aerodynamics/figure-49.png)](images/aerodynamics/figure-49.png)
+
+**Figure 50** — Skin friction coefficient Cf — from the Clauser plot method
+
+[![](images/aerodynamics/figure-50.png)](images/aerodynamics/figure-50.png)
+
+**Figure 51** — Heat transfer analogy — Cf vs. Stanton number correlation
+
+[![](images/aerodynamics/figure-51.png)](images/aerodynamics/figure-51.png)
+
+**Figure 52** — Pressure gradient parameter — beta for the NACA 0012
+
+[![](images/aerodynamics/figure-52.png)](images/aerodynamics/figure-52.png)
+
+**Figure 53** — Separation point detection — where Cf = 0 on the upper surface
+
+[![](images/aerodynamics/figure-53.png)](images/aerodynamics/figure-53.png)
+
+**Figure 54** — Laminar separation bubble — visualisation at alpha = 12 deg
+
+[![](images/aerodynamics/figure-54.png)](images/aerodynamics/figure-54.png)
+
+**Figure 55** — Turbulent reattachment — downstream of the laminar separation bubble
+
+[![](images/aerodynamics/figure-55.png)](images/aerodynamics/figure-55.png)
+
+**Figure 56** — Bubble length vs. alpha — increasing with angle of attack
+
+[![](images/aerodynamics/figure-56.png)](images/aerodynamics/figure-56.png)
+
+**Figure 57** — Maximum bubble length — at alpha = 14 deg just before stall
+
+[![](images/aerodynamics/figure-57.png)](images/aerodynamics/figure-57.png)
+
+**Figure 58** — NACA 0012 polar summary — final CL, CD, Cm vs. alpha at Re = 3.2 x 10⁵
+
+[![](images/aerodynamics/figure-58.png)](images/aerodynamics/figure-58.png)
+
+**Figure 59** — Data table — tabulated coefficients for all test angles
+
+[![](images/aerodynamics/figure-59.png)](images/aerodynamics/figure-59.png)
+
+**Figure 60** — Plots appendix — additional Cp distributions at intermediate angles
+
+[![](images/aerodynamics/figure-60.png)](images/aerodynamics/figure-60.png)
+
+**Figure 61** — Plots appendix — Cp distributions in the stalled region
+
+[![](images/aerodynamics/figure-61.png)](images/aerodynamics/figure-61.png)
+
+**Figure 62** — Plots appendix — boundary layer profiles at 30% chord
+
+[![](images/aerodynamics/figure-62.png)](images/aerodynamics/figure-62.png)
+
+**Figure 63** — Plots appendix — boundary layer profiles at 50% chord
+
+[![](images/aerodynamics/figure-63.png)](images/aerodynamics/figure-63.png)
+
+**Figure 64** — Plots appendix — boundary layer profiles at 70% chord
+
+[![](images/aerodynamics/figure-64.png)](images/aerodynamics/figure-64.png)
+
+**Figure 65** — Plots appendix — boundary layer profiles at 90% chord
+
+[![](images/aerodynamics/figure-65.png)](images/aerodynamics/figure-65.png)
+
+**Figure 66** — Plots appendix — surface streamline visualisation at alpha = 10 deg
+
+[![](images/aerodynamics/figure-66.png)](images/aerodynamics/figure-66.png)
+
+**Figure 67** — Plots appendix — surface streamline visualisation at alpha = 16 deg
+
+[![](images/aerodynamics/figure-67.png)](images/aerodynamics/figure-67.png)
+
+**Figure 68** — Plots appendix — wake survey at alpha = 4 deg
+
+[![](images/aerodynamics/figure-68.png)](images/aerodynamics/figure-68.png)
+
+**Figure 69** — Plots appendix — wake survey at alpha = 10 deg
+
+[![](images/aerodynamics/figure-69.png)](images/aerodynamics/figure-69.png)
+
+**Figure 70** — Plots appendix — wake survey at alpha = 16 deg
+
+[![](images/aerodynamics/figure-70.png)](images/aerodynamics/figure-70.png)
+
+**Figure 71** — Plots appendix — turbulence intensity spectrum in the test section
+
+[![](images/aerodynamics/figure-71.png)](images/aerodynamics/figure-71.png)
+
+**Figure 72** — Plots appendix — acoustic spectrum of the tunnel
+
+[![](images/aerodynamics/figure-72.png)](images/aerodynamics/figure-72.png)
+
+**Figure 73** — Plots appendix — temperature drift during the test campaign
+
+[![](images/aerodynamics/figure-73.png)](images/aerodynamics/figure-73.png)
+
+**Figure 74** — Plots appendix — atmospheric pressure variation
+
+[![](images/aerodynamics/figure-74.png)](images/aerodynamics/figure-74.png)
+
+**Figure 75** — Plots appendix — relative humidity variation
+
+[![](images/aerodynamics/figure-75.png)](images/aerodynamics/figure-75.png)
+
+**Figure 76** — Plots appendix — tunnel speed calibration curve
+
+[![](images/aerodynamics/figure-76.png)](images/aerodynamics/figure-76.png)
+
+**Figure 77** — Plots appendix — final data quality summary
+
+[![](images/aerodynamics/figure-77.png)](images/aerodynamics/figure-77.png)
+
 
 ---|---|---|
 | 1 | [igure-01.png](images/aerodynamics/figure-01.png) | Streamlines around a circular cylinder in uniform flow — potential flow pattern with stagnation points at theta = 0° and theta = 180° |
@@ -305,35 +534,114 @@ plots the trade between wing area, vertical tail volume, and stability margin.
 
 All 27 figures from the heavy-lift aircraft conceptual design report. Each is linked to its file in `images/aircraft-design/`.
 
-| Fig. | Preview | Description |
-|---|---|---|
-| 1 | <a href="images/aircraft-design/figure-01.png"><img src="images/aircraft-design/figure-01.png" width="120" alt="Figure 1"></a> | Proposed configuration — three-view drawing of the heavy-lift transport aircraft showing high-wing layout with T-tail |
-| 2 | <a href="images/aircraft-design/figure-02.png"><img src="images/aircraft-design/figure-02.png" width="120" alt="Figure 2"></a> | Thrust-to-weight ratio analysis — T/W vs. wing loading W/S for the mission profile |
-| 3 | <a href="images/aircraft-design/figure-03.png"><img src="images/aircraft-design/figure-03.png" width="120" alt="Figure 3"></a> | Wing loading analysis — W/S vs. approach speed for the landing field length requirement |
-| 4 | <a href="images/aircraft-design/figure-04.png"><img src="images/aircraft-design/figure-04.png" width="120" alt="Figure 4"></a> | Aerofoil selection — comparison of NACA 2412, NACA 4412, and NACA 23015 for the heavy-lift wing |
-| 5 | <a href="images/aircraft-design/figure-05.png"><img src="images/aircraft-design/figure-05.png" width="120" alt="Figure 5"></a> | Wing geometry design — planform view with span, chord, and taper ratio |
-| 6 | <a href="images/aircraft-design/figure-06.png"><img src="images/aircraft-design/figure-06.png" width="120" alt="Figure 6"></a> | Wing geometry detail — airfoil section at root, midspan, and tip stations |
-| 7 | <a href="images/aircraft-design/figure-07.png"><img src="images/aircraft-design/figure-07.png" width="120" alt="Figure 7"></a> | Loading and unloading of cargo — ramp door geometry and cargo floor plan |
-| 8 | <a href="images/aircraft-design/figure-08.png"><img src="images/aircraft-design/figure-08.png" width="120" alt="Figure 8"></a> | Stability and control analysis — stick-fixed neutral point calculation |
-| 9 | <a href="images/aircraft-design/figure-09.png"><img src="images/aircraft-design/figure-09.png" width="120" alt="Figure 9"></a> | Static margin — SM vs. centre of gravity position for the loading envelope |
-| 10 | <a href="images/aircraft-design/figure-10.png"><img src="images/aircraft-design/figure-10.png" width="120" alt="Figure 10"></a> | Directional stability derivative Cnbeta — calculated from vertical tail volume |
-| 11 | <a href="images/aircraft-design/figure-11.png"><img src="images/aircraft-design/figure-11.png" width="120" alt="Figure 11"></a> | Vertical tail sizing — VT volume coefficient vs. engine-out yaw moment |
-| 12 | <a href="images/aircraft-design/figure-12.png"><img src="images/aircraft-design/figure-12.png" width="120" alt="Figure 12"></a> | Engine-out case — rudder authority required for balanced flight |
-| 13 | <a href="images/aircraft-design/figure-13.png"><img src="images/aircraft-design/figure-13.png" width="120" alt="Figure 13"></a> | Take-off field length — ground roll vs. MTOW |
-| 14 | <a href="images/aircraft-design/figure-14.png"><img src="images/aircraft-design/figure-14.png" width="120" alt="Figure 14"></a> | Landing field length — approach speed vs. MLW |
-| 15 | <a href="images/aircraft-design/figure-15.png"><img src="images/aircraft-design/figure-15.png" width="120" alt="Figure 15"></a> | Climb performance — rate of climb vs. altitude |
-| 16 | <a href="images/aircraft-design/figure-16.png"><img src="images/aircraft-design/figure-16.png" width="120" alt="Figure 16"></a> | Service ceiling — altitude vs. climb rate |
-| 17 | <a href="images/aircraft-design/figure-17.png"><img src="images/aircraft-design/figure-17.png" width="120" alt="Figure 17"></a> | Payload-range diagram — range vs. payload for the design mission |
-| 18 | <a href="images/aircraft-design/figure-18.png"><img src="images/aircraft-design/figure-18.png" width="120" alt="Figure 18"></a> | Fuel fraction breakdown — mission segment fuel fractions |
-| 19 | <a href="images/aircraft-design/figure-19.png"><img src="images/aircraft-design/figure-19.png" width="120" alt="Figure 19"></a> | Weight estimation — empty weight vs. MTOW correlation |
-| 20 | <a href="images/aircraft-design/figure-20.png"><img src="images/aircraft-design/figure-20.png" width="120" alt="Figure 20"></a> | Weight breakdown — component weight fractions (wing, fuselage, empennage, etc.) |
-| 21 | <a href="images/aircraft-design/figure-21.png"><img src="images/aircraft-design/figure-21.png" width="120" alt="Figure 21"></a> | Cost estimation — direct operating cost vs. payload |
-| 22 | <a href="images/aircraft-design/figure-22.png"><img src="images/aircraft-design/figure-22.png" width="120" alt="Figure 22"></a> | Discussion — design tradeoffs and sensitivity analysis |
-| 23 | <a href="images/aircraft-design/figure-23.png"><img src="images/aircraft-design/figure-23.png" width="120" alt="Figure 23"></a> | Conclusion — summary of the design outcome |
-| 24 | <a href="images/aircraft-design/figure-24.png"><img src="images/aircraft-design/figure-24.png" width="120" alt="Figure 24"></a> | Appendix — additional design charts and data |
-| 25 | <a href="images/aircraft-design/figure-25.png"><img src="images/aircraft-design/figure-25.png" width="120" alt="Figure 25"></a> | Appendix — stability derivatives at different flight conditions |
-| 26 | <a href="images/aircraft-design/figure-26.png"><img src="images/aircraft-design/figure-26.png" width="120" alt="Figure 26"></a> | Appendix — aerodynamic polar at different altitudes |
-| 27 | <a href="images/aircraft-design/figure-27.png"><img src="images/aircraft-design/figure-27.png" width="120" alt="Figure 27"></a> | Appendix — engine deck and thrust lapse |
+**Figure 1** — Proposed configuration — three-view drawing of the heavy-lift transport aircraft showing high-wing layout with T-tail
+
+[![](images/aircraft-design/figure-01.png)](images/aircraft-design/figure-01.png)
+
+**Figure 2** — Thrust-to-weight ratio analysis — T/W vs. wing loading W/S for the mission profile
+
+[![](images/aircraft-design/figure-02.png)](images/aircraft-design/figure-02.png)
+
+**Figure 3** — Wing loading analysis — W/S vs. approach speed for the landing field length requirement
+
+[![](images/aircraft-design/figure-03.png)](images/aircraft-design/figure-03.png)
+
+**Figure 4** — Aerofoil selection — comparison of NACA 2412, NACA 4412, and NACA 23015 for the heavy-lift wing
+
+[![](images/aircraft-design/figure-04.png)](images/aircraft-design/figure-04.png)
+
+**Figure 5** — Wing geometry design — planform view with span, chord, and taper ratio
+
+[![](images/aircraft-design/figure-05.png)](images/aircraft-design/figure-05.png)
+
+**Figure 6** — Wing geometry detail — airfoil section at root, midspan, and tip stations
+
+[![](images/aircraft-design/figure-06.png)](images/aircraft-design/figure-06.png)
+
+**Figure 7** — Loading and unloading of cargo — ramp door geometry and cargo floor plan
+
+[![](images/aircraft-design/figure-07.png)](images/aircraft-design/figure-07.png)
+
+**Figure 8** — Stability and control analysis — stick-fixed neutral point calculation
+
+[![](images/aircraft-design/figure-08.png)](images/aircraft-design/figure-08.png)
+
+**Figure 9** — Static margin — SM vs. centre of gravity position for the loading envelope
+
+[![](images/aircraft-design/figure-09.png)](images/aircraft-design/figure-09.png)
+
+**Figure 10** — Directional stability derivative Cnbeta — calculated from vertical tail volume
+
+[![](images/aircraft-design/figure-10.png)](images/aircraft-design/figure-10.png)
+
+**Figure 11** — Vertical tail sizing — VT volume coefficient vs. engine-out yaw moment
+
+[![](images/aircraft-design/figure-11.png)](images/aircraft-design/figure-11.png)
+
+**Figure 12** — Engine-out case — rudder authority required for balanced flight
+
+[![](images/aircraft-design/figure-12.png)](images/aircraft-design/figure-12.png)
+
+**Figure 13** — Take-off field length — ground roll vs. MTOW
+
+[![](images/aircraft-design/figure-13.png)](images/aircraft-design/figure-13.png)
+
+**Figure 14** — Landing field length — approach speed vs. MLW
+
+[![](images/aircraft-design/figure-14.png)](images/aircraft-design/figure-14.png)
+
+**Figure 15** — Climb performance — rate of climb vs. altitude
+
+[![](images/aircraft-design/figure-15.png)](images/aircraft-design/figure-15.png)
+
+**Figure 16** — Service ceiling — altitude vs. climb rate
+
+[![](images/aircraft-design/figure-16.png)](images/aircraft-design/figure-16.png)
+
+**Figure 17** — Payload-range diagram — range vs. payload for the design mission
+
+[![](images/aircraft-design/figure-17.png)](images/aircraft-design/figure-17.png)
+
+**Figure 18** — Fuel fraction breakdown — mission segment fuel fractions
+
+[![](images/aircraft-design/figure-18.png)](images/aircraft-design/figure-18.png)
+
+**Figure 19** — Weight estimation — empty weight vs. MTOW correlation
+
+[![](images/aircraft-design/figure-19.png)](images/aircraft-design/figure-19.png)
+
+**Figure 20** — Weight breakdown — component weight fractions (wing, fuselage, empennage, etc.)
+
+[![](images/aircraft-design/figure-20.png)](images/aircraft-design/figure-20.png)
+
+**Figure 21** — Cost estimation — direct operating cost vs. payload
+
+[![](images/aircraft-design/figure-21.png)](images/aircraft-design/figure-21.png)
+
+**Figure 22** — Discussion — design tradeoffs and sensitivity analysis
+
+[![](images/aircraft-design/figure-22.png)](images/aircraft-design/figure-22.png)
+
+**Figure 23** — Conclusion — summary of the design outcome
+
+[![](images/aircraft-design/figure-23.png)](images/aircraft-design/figure-23.png)
+
+**Figure 24** — Appendix — additional design charts and data
+
+[![](images/aircraft-design/figure-24.png)](images/aircraft-design/figure-24.png)
+
+**Figure 25** — Appendix — stability derivatives at different flight conditions
+
+[![](images/aircraft-design/figure-25.png)](images/aircraft-design/figure-25.png)
+
+**Figure 26** — Appendix — aerodynamic polar at different altitudes
+
+[![](images/aircraft-design/figure-26.png)](images/aircraft-design/figure-26.png)
+
+**Figure 27** — Appendix — engine deck and thrust lapse
+
+[![](images/aircraft-design/figure-27.png)](images/aircraft-design/figure-27.png)
+
 
 ---
 
