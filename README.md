@@ -1,5 +1,8 @@
 # Aircraft Aerodynamics & Design
 
+<!-- Last refreshed: 2026-06-06 -->
+
+
 > Combined engineering project: experimental aerodynamics of the NACA 0012 aerofoil, classical
 > airfoil coefficient analysis, and conceptual sizing of a heavy-lift cargo transport aircraft.
 
