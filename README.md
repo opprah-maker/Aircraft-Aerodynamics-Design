@@ -737,6 +737,77 @@ The full 3D splat gallery is at <https://opprah-maker.github.io/#3d>.
 
 ---
 
+## 8. How I built this
+
+This repository is the merger of two assignments: a wind-tunnel test of a NACA 0012 aerofoil (Module A) and the conceptual design of a heavy-lift transport aircraft (Module B). Both were carried out as part of the same undergraduate module on aerodynamics and aircraft design, and the merger is a presentational choice so that the aerofoil data can be read alongside the aircraft that uses it.
+
+The work was performed in two broad phases:
+
+1. **Wind-tunnel testing (Module A).** A NACA 0012 aerofoil of 100 mm chord was tested in the open-circuit subsonic wind tunnel at Brunel University at a Reynolds number of approximately 3.2 x 10^5. The test section was a rectangular open jet, and the model was supported on a streamlined support that allowed the angle of attack to be varied from -2 deg to 16 deg in 1 deg increments. Lift and drag were measured with a six-component strain-gauge balance, and surface pressure distributions were measured with 20 surface pressure taps and a Scanivalve pressure transducer. The data were corrected for blockage, and the uncertainty was quantified with the Kline-McClintock method.
+2. **Conceptual design (Module B).** A heavy-lift transport aircraft of 25,000 kg payload and 8,000 km design range was sized with the conventional constraint-analysis approach: thrust-to-weight ratio, wing loading, stability and control, performance (take-off, landing, climb, ceiling), and payload-range. The geometry was laid out in three-view, and the weight was estimated with the Torenbeek method and validated against published data for similar aircraft.
+
+The data, the figures, and the report PDFs in this repository are the outputs of those two workflows. The MATLAB scripts at the root of the repository are short post-processing utilities that were used to re-plot the wind-tunnel data and the design charts into the form used in the report.
+
+### Wind-tunnel data: from Excel to the web
+
+The original wind-tunnel data were recorded in two Microsoft Excel workbooks:
+
+- `original/Group 2 NACA 0012 testresults.xlsx`: 17 angles of attack, three trials per angle, with lift max, min, and average and drag max, min, and average at each angle.
+- `original/NACA0012 Group1 Lift & Drag results.xlsx`: 6 angles of attack, two trials per angle, with the same columns.
+
+Excel is a fine tool for recording and exploring the data, but it is not a great format for sharing them on the web. To make the data available alongside this report, both workbooks were converted to comma-separated values (CSV) with a small Python script (a self-taught post-graduation skill), and the CSV files were used to produce both a static PNG figure and an interactive HTML page.
+
+The outputs of the conversion are:
+
+- `wind-tunnel-data/naca0012_group1.csv`: the Group 1 workbook in CSV form.
+- `wind-tunnel-data/naca0012_group2.csv`: the Group 2 workbook in CSV form.
+- `wind-tunnel-data/naca0012_combined.csv`: the two workbooks concatenated, with a `source` column to distinguish them.
+- `wind-tunnel-data/naca0012_lift_drag_curves.png`: a static two-panel plot of the lift and drag curves for both groups.
+- `wind-tunnel-data/naca0012_wind_tunnel_data.html`: an interactive HTML page with the same data plotted with Chart.js, plus the data table. The page is hosted on the portfolio site (`opprah-maker.github.io/wind-tunnel/naca0012_wind_tunnel_data.html`).
+
+The lift curve and the drag curve are consistent between the two groups to within the experimental uncertainty; the largest discrepancy is at the high angles of attack, where the Group 2 data show a slightly higher lift and a slightly lower drag than the Group 1 data, which is consistent with the Group 2 model being tested at a slightly higher Reynolds number.
+
+## 9. Thought process
+
+The motivation for the merger was the observation that the conceptual design of an aircraft is informed by the aerodynamic data of the aerofoils that the aircraft uses, and that the two assignments were a natural pair. The wind-tunnel data on the NACA 0012 are the input to the conceptual design: the lift curve slope, the maximum lift coefficient, and the drag polar are all required for the constraint analysis.
+
+The decision to use the NACA 0012 aerofoil (rather than a more modern supercritical section) was a deliberate choice: the NACA 0012 is a well-understood benchmark, the wind-tunnel data are well documented in the literature, and the comparison between the measured data and the Abbott and von Doenhoff reference data is a useful validation of the experimental method. The decision to use a heavy-lift transport aircraft of 25,000 kg payload was driven by the design specification of the assignment, and the design constraints (8,000 km range, 30 deg climb gradient at take-off, FAR 25 stall speed) were chosen to be representative of the class of aircraft.
+
+The choice of the constraint-analysis method (rather than a numerical optimisation) was a pragmatic simplification: a full numerical optimisation would have been more rigorous, but the conceptual-design stage is a sizing exercise and the design is constrained by a small number of dominant constraints. The use of the Torenbeek weight-estimation method (rather than the more common Cessna method) was a deliberate departure, on the basis that the Torenbeek method is more appropriate for a transport aircraft of this size.
+
+## 10. Learning outcomes
+
+On completion of this project the following capabilities were demonstrated:
+
+- **Experimental aerodynamics.** Wind-tunnel testing of a two-dimensional aerofoil, calibration of the wind-tunnel, correction of the raw data for blockage, and quantification of the experimental uncertainty.
+- **Data analysis.** Reduction of the raw wind-tunnel data to non-dimensional coefficients (CL, CD, L/D), comparison against the Abbott and von Doenhoff reference data, and presentation of the data as a lift curve, a drag polar, and a pitching-moment curve.
+- **Conceptual aircraft design.** Constraint analysis for thrust-to-weight ratio and wing loading, sizing of the wing and the vertical tail, performance estimation (take-off, landing, climb, ceiling), and weight estimation with the Torenbeek method.
+- **Engineering judgement.** Awareness of the limitations of a first-order constraint analysis, the assumptions behind the Torenbeek method, and the simplifications inherent in a single-class payload-range analysis.
+- **Technical writing.** Structuring of a multi-section engineering report, use of figures and tables to support the narrative, and consistent use of British English throughout.
+
+The MATLAB scripts in this repository are post-processing utilities only; the wind-tunnel testing was carried out in the Brunel University subsonic wind tunnel, and the conceptual design was carried out by hand and with the aid of published data.
+
+## 11. Engineering tools: what was taught, what was self-taught
+
+**Taught during the undergraduate programme (Brunel University, Aerospace Engineering):**
+
+- Wind-tunnel testing of two-dimensional aerofoils, including calibration, blockage correction, and uncertainty quantification.
+- Theoretical aerodynamics (potential flow, boundary-layer theory, panel methods, thin-aerofoil theory).
+- Aircraft constraint analysis (thrust-to-weight, wing loading, stability and control).
+- Weight estimation with the Torenbeek and Cessna methods.
+- MATLAB and Octave for post-processing of numerical data and for short numerical-methods assignments.
+- Technical report writing in British English.
+
+**Self-taught after graduation, in the home laboratory:**
+
+- Python (NumPy, SciPy, Matplotlib, Pandas, openpyxl) for data analysis, plotting, and small utilities; the wind-tunnel data in this repository were converted from Excel to CSV with a Python script written in the home laboratory.
+- Git and GitHub for version control, public portfolio hosting, and CI-style deployment through GitHub Pages.
+- HTML, CSS, and vanilla JavaScript for the portfolio website (this page is part of that site); the interactive wind-tunnel page was built with Chart.js.
+- Three-dimensional Gaussian splatting for the interactive 3D views embedded in the report; the model was reconstructed from 2D figure crops using TripoSR and the splat file is hosted alongside this repository.
+- Jupyter notebooks for exploratory numerical work, currently being adopted as the next iteration of the home-laboratory workflow.
+
+The line between the two lists is not always sharp: the wind-tunnel, aerodynamics, aircraft-design, and MATLAB skills were taught, and the Python, Git, HTML/CSS, and 3D skills were self-taught. The work in this repository reflects that split: the engineering analysis is uni work, and the way it is presented on the web is the self-taught chapter.
+
 ## 7. Topics
 
 `aerodynamics` `aircraft-design` `aircraft-sizing` `conceptual-design` `directional-stability`
