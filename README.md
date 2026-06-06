@@ -6,13 +6,13 @@
 > Combined engineering project: experimental aerodynamics of the NACA 0012 aerofoil, classical
 > airfoil coefficient analysis, and conceptual sizing of a heavy-lift cargo transport aircraft.
 
-[![MATLAB](https://img.shields.io/badge/MATLAB-R2024a-orangelogo=mathworks&logoColor=white)]()
+[![MATLAB](https://img.shields.io/badge/MATLAB-R2024a-orange?logo=mathworks&logoColor=white)]()
 [![Aerospace Engineering](https://img.shields.io/badge/Discipline-Aerospace%20Engineering-0E1B4D)]()
-[![Report PDF](https://img.shields.io/badge/Reports-PDF-redlogo=adobe-acrobat-reader&logoColor=white)]()
+[![Report PDF](https://img.shields.io/badge/Reports-PDF-red?logo=adobe-acrobat-reader&logoColor=white)]()
 
-[![Open in MATLAB Online](https://img.shields.io/badge/Open%20in-MATLAB%20Online-orangestyle=flat-square&logo=mathworks&logoColor=white)](https://matlab.mathworks.com/open/github/v1repo=opprah-maker/Aircraft-Aerodynamics-Design&file=src/naca0012_analysis.m)
-[![Open in MATLAB Online](https://img.shields.io/badge/Open%20in-MATLAB%20Online-orangestyle=flat-square&logo=mathworks&logoColor=white)](https://matlab.mathworks.com/open/github/v1repo=opprah-maker/Aircraft-Aerodynamics-Design&file=src/cylinder_pressure.m)
-[![Open in MATLAB Online](https://img.shields.io/badge/Open%20in-MATLAB%20Online-orangestyle=flat-square&logo=mathworks&logoColor=white)](https://matlab.mathworks.com/open/github/v1repo=opprah-maker/Aircraft-Aerodynamics-Design&file=src/aircraft_sizing.m)
+[![Open in MATLAB Online](https://img.shields.io/badge/Open%20in-MATLAB%20Online-orange?style=flat-square&logo=mathworks&logoColor=white)](https://matlab.mathworks.com/open/github/v1repo=opprah-maker/Aircraft-Aerodynamics-Design&file=src/naca0012_analysis.m)
+[![Open in MATLAB Online](https://img.shields.io/badge/Open%20in-MATLAB%20Online-orange?style=flat-square&logo=mathworks&logoColor=white)](https://matlab.mathworks.com/open/github/v1repo=opprah-maker/Aircraft-Aerodynamics-Design&file=src/cylinder_pressure.m)
+[![Open in MATLAB Online](https://img.shields.io/badge/Open%20in-MATLAB%20Online-orange?style=flat-square&logo=mathworks&logoColor=white)](https://matlab.mathworks.com/open/github/v1repo=opprah-maker/Aircraft-Aerodynamics-Design&file=src/aircraft_sizing.m)
 
 ---
 
