@@ -30,8 +30,8 @@ The full academic write-ups for each module are included as PDFs alongside the s
 
 | Report | File |
 |---|---|
-| Aerodynamics Assignment &mdash; NACA 0012 wind tunnel + cylinder pressure study | [`reports/Aerodynamics-Assignment.pdf`](reports/Aerodynamics-Assignment.pdf) |
-| Aircraft Assessment &mdash; Heavy-lift transport aircraft conceptual design | [`reports/Aircraft-Assessment.pdf`](reports/Aircraft-Assessment.pdf) |
+| Aerodynamics Assignment : NACA 0012 wind tunnel + cylinder pressure study | [`reports/Aerodynamics-Assignment.pdf`](reports/Aerodynamics-Assignment.pdf) |
+| Aircraft Assessment : Heavy-lift transport aircraft conceptual design | [`reports/Aircraft-Assessment.pdf`](reports/Aircraft-Assessment.pdf) |
 
 Plain-text extracts of each report are also available in
 [`reports/Aerodynamics-Assignment_text.txt`](reports/Aerodynamics-Assignment_text.txt) and
@@ -39,7 +39,7 @@ Plain-text extracts of each report are also available in
 
 ---
 
-## 3. Module A &mdash; NACA 0012 Aerodynamics
+## 3. Module A : NACA 0012 Aerodynamics
 
 ### 3.1 Geometry
 The NACA 0012 is a symmetric four-digit airfoil with the canonical thickness distribution
@@ -81,7 +81,7 @@ which is compared against potential-flow theory $C_p = 1 - 4\sin^2\theta$ on the
 The cleaned wind-tunnel datasets are stored in [`data/naca_data.csv`](data/naca_data.csv)
 (columns: `AOA_deg, Lift_N, Drag_N`).
 
-### 3.5 Figure Gallery &mdash; Aerodynamics
+### 3.5 Figure Gallery : Aerodynamics
 
 <table>
 <tr><td align="center"><img src="images/aerodynamics/figure-01.png" width="240" alt="figure-01.png"/><br/><sub>figure-01.png</sub></td><td align="center"><img src="images/aerodynamics/figure-02.png" width="240" alt="figure-02.png"/><br/><sub>figure-02.png</sub></td><td align="center"><img src="images/aerodynamics/figure-03.png" width="240" alt="figure-03.png"/><br/><sub>figure-03.png</sub></td><td align="center"><img src="images/aerodynamics/figure-04.png" width="240" alt="figure-04.png"/><br/><sub>figure-04.png</sub></td></tr>
@@ -108,7 +108,7 @@ The cleaned wind-tunnel datasets are stored in [`data/naca_data.csv`](data/naca_
 
 ---
 
-## 4. Module B &mdash; Heavy-Lift Aircraft Conceptual Sizing
+## 4. Module B : Heavy-Lift Aircraft Conceptual Sizing
 
 ### 4.1 Mission Requirements
 | Parameter | Value |
@@ -138,7 +138,7 @@ $$C_{n_\beta} = C_{n_\beta,\text{wing}} + C_{n_\beta,\text{fuselage}} - \eta_v \
 The MATLAB script [`src/aircraft_sizing.m`](src/aircraft_sizing.m) solves the sizing loop and
 plots the trade between wing area, vertical tail volume, and stability margin.
 
-### 4.4 Figure Gallery &mdash; Aircraft Design
+### 4.4 Figure Gallery : Aircraft Design
 
 <table>
 <tr><td align="center"><img src="images/aircraft-design/figure-01.png" width="240" alt="figure-01.png"/><br/><sub>figure-01.png</sub></td><td align="center"><img src="images/aircraft-design/figure-02.png" width="240" alt="figure-02.png"/><br/><sub>figure-02.png</sub></td><td align="center"><img src="images/aircraft-design/figure-03.png" width="240" alt="figure-03.png"/><br/><sub>figure-03.png</sub></td><td align="center"><img src="images/aircraft-design/figure-04.png" width="240" alt="figure-04.png"/><br/><sub>figure-04.png</sub></td></tr>
